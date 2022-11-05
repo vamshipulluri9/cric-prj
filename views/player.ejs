@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><%= player.name %> </li>
+        <li><%= player.role %> </li>
+        <li><%= player.mobileNo %> </li>
+        <li><%= player.address %> </li>
+    </ul>
+    <a href="/player/<%=player._id%>/update">UPDATE</a>
+    <form action="/player/<%=player._id%>/delete?_method=DELETE" method="POST"><button>DELETE</button></form>
+</body>
+</html>

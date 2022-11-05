@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+<body>
+    <form action="/player/<%=player._id%>/update?_method=PUT" method="POST">
+        <label for="name">name</label>
+        <input type="text" name="name" id="name" value="<%=player.name%> ">
+        <label for="role">Role</label>
+        <select name="role" id="role" value="<%=player.role%> ">
+            <option value="Batting">Batting</option>
+            <option value="Bowling">Bowling</option>
+            <option value="AllRounder">AllRounder</option>
+        </select>
+        <label for="mobileNo">mobileNo </label>
+        <input type="text" name="mobileNo" id="mobileNo" value="<%= player.mobileNo %>">
+        <label for="address">address </label>
+        <textarea name="address" id="address" cols="30" rows="10"><%=player.address %></textarea>
+        <button>Update</button>
+    </form>
+</body>
+</html>

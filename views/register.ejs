@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+<body>
+    <form action="/register" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="role">Role</label>
+        <select name="role" id="role">
+            <option value="Batting">Batting</option>
+            <option value="Bowling">Bowling</option>
+            <option value="AllRounder">AllRounder</option>
+        </select>
+        <label for="mobileNo">mobileNo</label>
+        <input type="text" name="mobileNo" id="mobileNo">
+        <label for="address">address</label>
+        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
